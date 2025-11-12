@@ -1,0 +1,93 @@
+/* ===================================
+   ARTICLE HEADER - Material Design
+   =================================== */
+
+.article-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    box-shadow:
+        0 10px 40px rgba(102, 126, 234, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.article-header:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 14px 48px rgba(102, 126, 234, 0.35),
+        0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.02em;
+    position: relative;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-header .intro {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+    position: relative;
+    font-weight: 400;
+}
+
+.article-header .intro:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-header {
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+
+    .article-header h1 {
+        font-size: 1.875rem;
+    }
+
+    .article-header .intro {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-header {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .article-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .article-header .intro {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+    }
+}
