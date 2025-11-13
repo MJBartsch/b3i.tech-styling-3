@@ -867,6 +867,101 @@ img {
 }
 
 /* ===================================
+   MOBILE DISPLAY SIMPLIFICATION
+   Hide decorative elements, show text-only on mobile
+   Solves NitroPack overflow issues by removing complex visuals
+   =================================== */
+
+@media (max-width: 768px) {
+    /* MOBILE SIMPLIFICATION: Hide visual star icons, show text rating only */
+    .star {
+        display: none !important;
+    }
+
+    .qv-rating-stars {
+        display: none !important;
+    }
+
+    /* Make text rating more prominent since stars are hidden */
+    .qv-winner-rating {
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        color: #ff6b35 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 0.25rem 0.5rem !important;
+        background: rgba(255, 107, 53, 0.1) !important;
+        border-radius: 4px !important;
+        margin-top: 0.5rem !important;
+    }
+
+    /* Simplify winner name layout without stars */
+    .qv-winner-name {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+    }
+
+    /* MOBILE SIMPLIFICATION: Hide trust icon checkmarks */
+    .qv-trust-icon {
+        display: none !important;
+    }
+
+    /* Adjust trust items to work without icons */
+    .qv-trust-item {
+        font-size: 0.75rem !important;
+        padding: 0.25rem 0.5rem !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-radius: 4px !important;
+    }
+
+    /* MOBILE SIMPLIFICATION: Hide arrows */
+    .qv-arrow {
+        display: none !important;
+    }
+
+    /* Adjust links that had arrows */
+    .qv-view-details,
+    .qv-compare-btn {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    /* MOBILE SIMPLIFICATION: Hide platform logos on mobile to reduce complexity */
+    .qv-platform-logo {
+        display: none !important;
+    }
+
+    /* Add more spacing to category body without logo */
+    .qv-category-body {
+        padding-top: 1rem !important;
+    }
+
+    /* Simplify highlight badges on mobile */
+    .qv-highlight-badge {
+        font-size: 0.625rem !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+
+    /* Hide table star ratings, show text only */
+    .platform-table .rating-stars,
+    table .rating-stars,
+    td .rating-stars {
+        display: none !important;
+    }
+
+    /* Make table rating text more visible without stars */
+    .platform-table .platform-rating,
+    table .platform-rating,
+    td .platform-rating {
+        font-weight: 600 !important;
+        color: #ff6b35 !important;
+        font-size: 0.875rem !important;
+    }
+}
+
+/* ===================================
    MOBILE OVERFLOW PREVENTION
    Additional safeguards for Elementor + NitroPack
    =================================== */
