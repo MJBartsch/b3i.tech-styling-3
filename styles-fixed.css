@@ -376,15 +376,21 @@ img {
     flex-shrink: 0; /* FIX: Prevent stars from shrinking */
 }
 
+/* Star styling - compatible with both SVG and text stars */
 .star {
     width: 8px;
     height: 8px;
-    fill: #ff6b35;
+    fill: #ff6b35; /* For SVG stars */
+    color: #ff6b35; /* For text stars (★) */
     flex-shrink: 0; /* FIX: Prevent individual stars from shrinking */
+    display: inline-block;
+    font-size: 8px;
+    line-height: 1;
 }
 
 .star.empty {
-    fill: #e5e5e7;
+    fill: #e5e5e7; /* For SVG stars */
+    color: #e5e5e7; /* For empty text stars (☆) */
 }
 
 /* FIX: Ensure all SVGs stay contained */
@@ -733,6 +739,8 @@ img {
         height: 7px !important;
         min-width: 7px !important;
         min-height: 7px !important;
+        font-size: 7px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
         flex-shrink: 0 !important;
         display: inline-block !important;
         overflow: visible !important;
@@ -849,6 +857,8 @@ img {
         height: 6px !important;
         min-width: 6px !important;
         min-height: 6px !important;
+        font-size: 6px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
     }
 
     .qv-rating-stars {
@@ -1150,6 +1160,9 @@ td .rating-stars .star {
     width: 12px !important;
     height: 12px !important;
     fill: #ff6b35 !important;
+    color: #ff6b35 !important; /* For text stars (★) */
+    font-size: 12px !important;
+    line-height: 1 !important;
     flex-shrink: 0 !important; /* FIX: Prevent individual stars from shrinking */
     display: inline-block !important;
 }
@@ -1158,6 +1171,7 @@ td .rating-stars .star {
 .platform-table .rating-stars .star.empty,
 table .rating-stars .star.empty {
     fill: #e5e5e7 !important;
+    color: #e5e5e7 !important; /* For empty text stars (☆) */
 }
 
 .rating-value,
@@ -1310,6 +1324,8 @@ table td {
         height: 10px !important;
         min-width: 10px !important;
         min-height: 10px !important;
+        font-size: 10px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
         flex-shrink: 0 !important;
         overflow: visible !important;
     }
