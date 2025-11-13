@@ -1069,6 +1069,7 @@
     margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
+    min-height: 70px; /* CLS FIX: Reserve space for logo container */
 }
 
 .platform-logo h2 {
@@ -1079,14 +1080,25 @@
     letter-spacing: -0.01em;
 }
 
-.platform-logo img {
-    display: block;
-    max-width: 160px;
-    max-height: 50px;
-    width: 160px; /* CLS FIX: Explicit width reserves space before image loads */
-    height: auto;
-    object-fit: contain;
-    aspect-ratio: 16/5; /* CLS FIX: Reserve space for images to prevent layout shift */
+/* CLS FIX: Enhanced image targeting for WordPress/Elementor */
+/* Target images directly and within Elementor containers */
+.platform-logo img,
+.platform-logo .elementor-widget-container img,
+.platform-logo picture img,
+.platform-logo figure img {
+    display: block !important;
+    max-width: 160px !important;
+    max-height: 50px !important;
+    width: 160px !important; /* CLS FIX: Explicit width reserves space before image loads */
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: 16/5 !important; /* CLS FIX: Reserve space for images to prevent layout shift */
+}
+
+/* Ensure Elementor containers don't interfere */
+.platform-logo .elementor-widget-container {
+    width: 160px;
+    min-height: 50px;
 }
 
 .platform-tagline {
@@ -2575,4 +2587,11 @@ ul.checklist li::before {
    - Added min-height to flex-wrap containers
    - Included font-display: swap recommendation for web fonts
    - Added optional skeleton loading state classes
+
+   WORDPRESS/ELEMENTOR SPECIFIC FIXES:
+   - Enhanced .platform-logo img selectors with !important flags
+   - Target images within Elementor containers (.elementor-widget-container)
+   - Added container min-height to .platform-logo (70px)
+   - Target images in picture and figure elements
+   - Ensure Elementor wrapper containers have fixed dimensions
    =================================== */
