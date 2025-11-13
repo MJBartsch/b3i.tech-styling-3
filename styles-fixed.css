@@ -294,6 +294,36 @@ img {
     overflow: hidden; /* FIX: Contain all child elements */
 }
 
+/* Platform Logo Container */
+.qv-platform-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    min-height: 90px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.qv-platform-logo img {
+    border-radius: 8px !important;
+    display: block !important;
+    max-width: 90px !important;
+    max-height: 90px !important;
+    width: 90px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: 1/5 !important;
+}
+
+/* Elementor compatibility for platform logos */
+.qv-platform-logo .elementor-widget-container {
+    width: 90px;
+    min-height: 90px;
+}
+
 .qv-winner-link {
     text-decoration: none;
     color: inherit;
@@ -347,15 +377,21 @@ img {
     flex-shrink: 0; /* FIX: Prevent stars from shrinking */
 }
 
+/* Star styling - compatible with both SVG and text stars */
 .star {
     width: 8px;
     height: 8px;
-    fill: #ff6b35;
+    fill: #ff6b35; /* For SVG stars */
+    color: #ff6b35; /* For text stars (★) */
     flex-shrink: 0; /* FIX: Prevent individual stars from shrinking */
+    display: inline-block;
+    font-size: 8px;
+    line-height: 1;
 }
 
 .star.empty {
-    fill: #e5e5e7;
+    fill: #e5e5e7; /* For SVG stars */
+    color: #e5e5e7; /* For empty text stars (☆) */
 }
 
 /* FIX: Ensure all SVGs stay contained */
@@ -704,6 +740,8 @@ img {
         height: 7px !important;
         min-width: 7px !important;
         min-height: 7px !important;
+        font-size: 7px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
         flex-shrink: 0 !important;
         display: inline-block !important;
         overflow: visible !important;
@@ -820,10 +858,104 @@ img {
         height: 6px !important;
         min-width: 6px !important;
         min-height: 6px !important;
+        font-size: 6px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
     }
 
     .qv-rating-stars {
         max-width: 40px !important;
+    }
+}
+
+/* ===================================
+   MOBILE DISPLAY SIMPLIFICATION
+   Hide decorative elements, show text-only on mobile
+   Solves NitroPack overflow issues by removing complex visuals
+   =================================== */
+
+@media (max-width: 768px) {
+    /* MOBILE SIMPLIFICATION: Hide visual star icons, show text rating only */
+    .star {
+        display: none !important;
+    }
+
+    .qv-rating-stars {
+        display: none !important;
+    }
+
+    /* Make text rating more prominent since stars are hidden */
+    .qv-winner-rating {
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        color: #ff6b35 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        padding: 0.25rem 0.5rem !important;
+        background: rgba(255, 107, 53, 0.1) !important;
+        border-radius: 4px !important;
+        margin-top: 0.5rem !important;
+    }
+
+    /* Simplify winner name layout without stars */
+    .qv-winner-name {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+    }
+
+    /* MOBILE SIMPLIFICATION: Hide trust icon checkmarks */
+    .qv-trust-icon {
+        display: none !important;
+    }
+
+    /* Adjust trust items to work without icons */
+    .qv-trust-item {
+        font-size: 0.75rem !important;
+        padding: 0.25rem 0.5rem !important;
+        background: rgba(0, 0, 0, 0.05) !important;
+        border-radius: 4px !important;
+    }
+
+    /* MOBILE SIMPLIFICATION: Hide arrows */
+    .qv-arrow {
+        display: none !important;
+    }
+
+    /* Adjust links that had arrows */
+    .qv-view-details,
+    .qv-compare-btn {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+
+
+    /* Add more spacing to category body without logo */
+    .qv-category-body {
+        padding-top: 1rem !important;
+    }
+
+    /* Simplify highlight badges on mobile */
+    .qv-highlight-badge {
+        font-size: 0.625rem !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+
+    /* Hide table star ratings, show text only */
+    .platform-table .rating-stars,
+    table .rating-stars,
+    td .rating-stars {
+        display: none !important;
+    }
+
+    /* Make table rating text more visible without stars */
+    .platform-table .platform-rating,
+    table .platform-rating,
+    td .platform-rating {
+        font-weight: 600 !important;
+        color: #ff6b35 !important;
+        font-size: 0.875rem !important;
     }
 }
 
@@ -1121,6 +1253,9 @@ td .rating-stars .star {
     width: 12px !important;
     height: 12px !important;
     fill: #ff6b35 !important;
+    color: #ff6b35 !important; /* For text stars (★) */
+    font-size: 12px !important;
+    line-height: 1 !important;
     flex-shrink: 0 !important; /* FIX: Prevent individual stars from shrinking */
     display: inline-block !important;
 }
@@ -1129,6 +1264,7 @@ td .rating-stars .star {
 .platform-table .rating-stars .star.empty,
 table .rating-stars .star.empty {
     fill: #e5e5e7 !important;
+    color: #e5e5e7 !important; /* For empty text stars (☆) */
 }
 
 .rating-value,
@@ -1281,6 +1417,8 @@ table td {
         height: 10px !important;
         min-width: 10px !important;
         min-height: 10px !important;
+        font-size: 10px !important; /* For text stars (★/☆) */
+        line-height: 1 !important;
         flex-shrink: 0 !important;
         overflow: visible !important;
     }
@@ -1352,8 +1490,8 @@ table td {
 }
 
 .platform-logo {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 4px 4px;
     border-radius: 8px;
     display: inline-block;
     margin-bottom: 12px;
@@ -1376,19 +1514,20 @@ table td {
 .platform-logo .elementor-widget-container img,
 .platform-logo picture img,
 .platform-logo figure img {
+    border-radius: 8px !important;
     display: block !important;
-    max-width: 160px !important;
-    max-height: 50px !important;
-    width: 160px !important; /* CLS FIX: Explicit width reserves space before image loads */
+    max-width: 90px !important;
+    max-height: 90px !important;
+    width: 90px !important; /* CLS FIX: Explicit width reserves space before image loads */
     height: auto !important;
     object-fit: contain !important;
-    aspect-ratio: 16/5 !important; /* CLS FIX: Reserve space for images to prevent layout shift */
+    aspect-ratio: 1/5 !important; /* CLS FIX: Reserve space for images to prevent layout shift */
 }
 
 /* Ensure Elementor containers don't interfere */
 .platform-logo .elementor-widget-container {
-    width: 160px;
-    min-height: 50px;
+    width: 90px;
+    min-height: 90px;
 }
 
 .platform-tagline {
