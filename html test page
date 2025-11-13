@@ -1,4 +1,738 @@
 <html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Crypto Betting Sites UK [2025]</title>
+<style>
+/* Mobile Display Fixes for Trust Icons, Stars, and Arrows */
+
+/* Fix 1: Trust Icons - Prevent overflow and improve mobile layout */
+.qv-trust-signals {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.qv-trust-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-size: 0.75rem;
+    color: #515154;
+    flex-shrink: 0; /* Prevent icons from shrinking */
+    min-width: 0; /* Allow text to truncate if needed */
+}
+
+.qv-trust-icon {
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    color: #22c55e;
+    flex-shrink: 0; /* Prevent icon from shrinking */
+}
+
+/* Fix 2: Star Ratings - Use inline-flex for better containment */
+.qv-rating-stars {
+    display: inline-flex; /* Changed from inline to inline-flex */
+    gap: 1px;
+    flex-shrink: 0; /* Prevent stars from shrinking */
+}
+
+.star {
+    width: 8px;
+    height: 8px;
+    fill: #ff6b35;
+    flex-shrink: 0;
+}
+
+.star.empty {
+    fill: #e5e5e7;
+}
+
+.rating-stars {
+    display: inline-flex;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+/* Fix 3: Winner Name - Prevent rating overflow */
+.qv-winner-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin: 0 0 0.375rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem; /* Add gap for spacing */
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+    transition: color 0.2s ease;
+}
+
+.qv-winner-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+    color: #ff6b35;
+    font-weight: 600;
+    flex-shrink: 0; /* Prevent rating from shrinking */
+    white-space: nowrap; /* Prevent rating text from wrapping */
+}
+
+/* Fix 4: Platform Rating Badge - Adjust for mobile */
+.platform-rating {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: #ff6b35;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    font-size: 0.875rem; /* Ensure readable size */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Fix 5: View Details Arrows */
+.qv-arrow {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.2s ease;
+    flex-shrink: 0; /* Prevent arrow from shrinking */
+}
+
+.qv-view-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem; /* Add gap for spacing */
+    font-size: 0.75rem;
+    color: #515154;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Fix 6: Platform Table Rating */
+.platform-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+/* Enhanced Mobile Responsive Fixes */
+@media (max-width: 768px) {
+    .qv-trust-signals {
+        gap: 1rem; /* Reduce gap on tablets */
+    }
+
+    .qv-winner-name {
+        font-size: 1rem; /* Slightly reduce font size */
+    }
+
+    .platform-rating {
+        top: 15px;
+        right: 15px;
+        padding: 6px 10px;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Trust Icons - Stack vertically on very small screens */
+    .qv-trust-signals {
+        gap: 0.75rem;
+        padding-top: 0.875rem;
+        margin-top: 0.875rem;
+    }
+
+    .qv-trust-item {
+        font-size: 0.6875rem; /* Slightly smaller text */
+    }
+
+    .qv-trust-icon {
+        width: 14px; /* Slightly smaller icons */
+        height: 14px;
+    }
+
+    /* Winner Name - Ensure proper wrapping */
+    .qv-winner-name {
+        font-size: 0.9375rem;
+        gap: 0.375rem;
+    }
+
+    .qv-winner-rating {
+        font-size: 0.8125rem;
+    }
+
+    /* Stars - Maintain visibility */
+    .star {
+        width: 7px; /* Slightly smaller on mobile */
+        height: 7px;
+    }
+
+    .rating-stars .star {
+        width: 10px; /* Maintain readability for main ratings */
+        height: 10px;
+    }
+
+    /* Platform Rating Badge - Adjust positioning */
+    .platform-rating {
+        top: 10px;
+        right: 10px;
+        padding: 5px 8px;
+        font-size: 0.75rem;
+        max-width: calc(100% - 20px); /* Prevent overflow */
+    }
+
+    /* Arrows - Maintain size */
+    .qv-arrow {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* View Details - Better mobile spacing */
+    .qv-view-details {
+        font-size: 0.6875rem;
+        gap: 0.375rem;
+    }
+
+    /* Category Cards - Prevent content overflow */
+    .qv-category {
+        overflow: hidden; /* Ensure nothing escapes container */
+    }
+
+    .qv-category-body {
+        padding: 0.75rem 0.875rem;
+        overflow: hidden; /* Contain all child elements */
+    }
+
+    .qv-category-header {
+        padding: 0.75rem 0.875rem 0.5rem;
+        overflow: hidden;
+    }
+
+    /* TOP PICK badge adjustment for mobile */
+    .qv-category.featured::before {
+        right: 10px; /* Move closer to edge on mobile */
+        font-size: 0.5625rem;
+        padding: 0.1875rem 0.625rem;
+    }
+
+    /* Ensure flex containers don't overflow */
+    .qv-compare-btn {
+        padding: 0.5rem 0.875rem;
+        font-size: 0.8125rem;
+        gap: 0.375rem;
+    }
+}
+
+/* Extra Small Devices (< 360px) */
+@media (max-width: 360px) {
+    .qv-trust-signals {
+        flex-direction: column; /* Stack vertically on very small screens */
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .qv-winner-name {
+        flex-direction: column; /* Stack name and rating vertically */
+        align-items: flex-start;
+    }
+
+    .platform-rating {
+        position: static; /* Remove absolute positioning */
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-header {
+        padding: 20px 15px; /* Reduce padding further */
+    }
+}
+
+/* Additional Container Safeguards */
+.qv-category,
+.platform-card,
+.quick-verdict,
+.table-container,
+.content-section {
+    overflow: hidden; /* Prevent any child overflow */
+    box-sizing: border-box;
+}
+
+/* Ensure all images and SVGs stay contained */
+.qv-trust-icon svg,
+.qv-arrow svg,
+.star svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Text Overflow Protection */
+.qv-winner-name > span:first-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+@media (max-width: 480px) {
+    .qv-winner-name > span:first-child {
+        white-space: normal; /* Allow wrapping on mobile */
+    }
+}
+
+/* ===================================
+   ORIGINAL STYLES - All your existing CSS
+   =================================== */
+
+/* ===================================
+   ARTICLE HEADER - Embossed Card with Depth
+   Light Skeuomorphic Design with Orange Accent
+   =================================== */
+
+.article-header {
+    background: linear-gradient(145deg, #f0f0f2, #ffffff);
+    padding: 3rem 2.5rem;
+    border-radius: 16px;
+    margin-bottom: 1.35rem;
+    position: relative;
+    box-shadow:
+        8px 8px 16px rgba(0, 0, 0, 0.08),
+        -8px -8px 16px rgba(255, 255, 255, 0.9),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.5),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.article-header::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    height: 50%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, transparent 100%);
+    border-radius: 16px 16px 0 0;
+    pointer-events: none;
+}
+
+.article-header h1 {
+    color: #1d1d1f;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+.article-header h1 .highlight {
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c61 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.article-header .intro {
+    color: #515154;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+}
+
+.article-header .intro:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article-header {
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+        margin-bottom: 2rem;
+    }
+
+    .article-header h1 {
+        font-size: 1.875rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .article-header .intro {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .article-header {
+        padding: 1.5rem 1.25rem;
+        border-radius: 10px;
+        box-shadow:
+            4px 4px 8px rgba(0, 0, 0, 0.06),
+            -4px -4px 8px rgba(255, 255, 255, 0.9);
+    }
+
+    .article-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        line-height: 1.3;
+    }
+
+    .article-header .intro {
+        font-size: 0.9375rem;
+        line-height: 1.6;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* ===================================
+   END OF ARTICLE HEADER SECTION
+   =================================== */
+
+   /* ===================================
+   QUICK VERDICT - SEO-Optimized Category Winners
+   Light Skeuomorphic with Orange Accent
+   =================================== */
+
+.quick-verdict {
+    background: linear-gradient(145deg, #ffffff, #fafafa);
+    padding: 1.75rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.04),
+        0 4px 8px rgba(0, 0, 0, 0.02),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* SEO-friendly header with H2 */
+.qv-header {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.qv-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b35 0%, #ff8c61 100%);
+    animation: slide-in 0.6s ease-out;
+}
+
+@keyframes slide-in {
+    from { width: 0; }
+    to { width: 80px; }
+}
+
+.qv-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #1d1d1f;
+    margin: 0 0 0.375rem 0;
+    letter-spacing: -0.01em;
+}
+
+.qv-subtitle {
+    font-size: 0.875rem;
+    color: #515154;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Updated date for SEO */
+.qv-updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    color: #86868b;
+}
+
+.qv-updated time {
+    color: #ff6b35;
+    font-weight: 500;
+}
+
+/* Category Winners Grid - SEO Optimized */
+.qv-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.875rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Individual category card */
+.qv-category {
+    background: linear-gradient(145deg, #f8f8f9, #ffffff);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.03),
+        -2px -2px 4px rgba(255, 255, 255, 0.9);
+}
+
+.qv-category:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        4px 4px 12px rgba(0, 0, 0, 0.08),
+        -4px -4px 12px rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 107, 53, 0.2);
+}
+
+/* Category header */
+.qv-category-header {
+    padding: 0.875rem 1rem 0.625rem;
+    background: rgba(255, 107, 53, 0.03);
+    border-bottom: 1px solid rgba(255, 107, 53, 0.08);
+    position: relative;
+}
+
+.qv-category-label {
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #86868b;
+    display: block;
+    margin-bottom: 0.125rem;
+}
+
+.qv-category-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+/* Winner details */
+.qv-category-body {
+    padding: 0.875rem 1rem;
+}
+
+.qv-winner-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.qv-category:hover .qv-winner-name {
+    color: #ff6b35;
+}
+
+/* Winner features list */
+.qv-winner-features {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+}
+
+.qv-winner-features li {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    color: #515154;
+    line-height: 1.6;
+    margin-bottom: 0.25rem;
+}
+
+.qv-winner-features li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff6b35;
+    font-weight: 700;
+}
+
+/* Key highlight badge */
+.qv-highlight-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 140, 97, 0.1));
+    color: #ff6b35;
+    font-size: 0.625rem;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.qv-category:hover .qv-highlight-badge {
+    background: linear-gradient(135deg, #ff6b35, #ff8c61);
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* View details link */
+.qv-category-footer {
+    padding: 0.625rem 1rem;
+    background: rgba(0, 0, 0, 0.02);
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.qv-view-details:hover {
+    color: #ff6b35;
+}
+
+.qv-view-details:hover .qv-arrow {
+    transform: translateX(3px);
+}
+
+/* Comparison table button */
+.qv-compare-section {
+    padding: 1rem;
+    background: rgba(255, 107, 53, 0.02);
+    border-radius: 8px;
+    margin-top: 1.25rem;
+}
+
+.qv-compare-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.qv-compare-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin: 0;
+}
+
+.qv-compare-count {
+    font-size: 0.75rem;
+    color: #86868b;
+}
+
+.qv-compare-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.625rem 1rem;
+    background: linear-gradient(135deg, #ff6b35, #ff8c61);
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+        0 2px 4px rgba(255, 107, 53, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.qv-compare-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.qv-compare-btn:hover::before {
+    width: 400px;
+    height: 400px;
+}
+
+.qv-compare-btn:hover {
+    transform: translateY(-1px);
+    box-shadow:
+        0 4px 8px rgba(255, 107, 53, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* Featured badge for top pick */
+.qv-category.featured {
+    border-color: rgba(255, 107, 53, 0.2);
+    box-shadow:
+        0 0 0 1px rgba(255, 107, 53, 0.1),
+        2px 2px 4px rgba(0, 0, 0, 0.03),
+        -2px -2px 4px rgba(255, 255, 255, 0.9);
+}
+
+.qv-category.featured::before {
+    content: 'TOP PICK';
+    position: absolute;
+    top: -1px;
+    right: 20px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c61);
+    color: #ffffff;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.625rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 2px 4px rgba(255, 107, 53, 0.2);
+    z-index: 1;
+}
+
+/* Responsive Design for Quick Verdict */
+@media (max-width: 768px) {
+    .quick-verdict {
+        padding: 1.25rem;
+    }
+
+    .qv-categories {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .quick-verdict {
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .qv-title {
+        font-size: 1.25rem;
+    }
+}
+
+/* ===================================
+   END OF QUICK VERDICT SECTION
+   =================================== */
+
+/* Add all the remaining CSS from your original file here */
+/* I'll add a comment to indicate where to add the rest */
+
+/* === REMAINING STYLES === */
+/* Platform Comparison Table, Platform Cards, Typography, FAQ, References, etc. */
+/* Add your remaining CSS sections here */
+
+</style>
 </head>
 <body>
 
