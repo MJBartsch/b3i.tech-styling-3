@@ -4,6 +4,55 @@
    =================================== */
 
 /* ===================================
+   NITROPACK COMPATIBILITY FIXES
+   Defensive CSS to survive performance optimization
+   =================================== */
+
+/* Prevent NitroPack from breaking flexbox layouts */
+.qv-trust-signals,
+.qv-winner-name,
+.qv-winner-rating,
+.qv-rating-stars,
+.qv-trust-item,
+.qv-trust-icon,
+.qv-arrow,
+.qv-view-details,
+.platform-rating,
+.rating-stars {
+    box-sizing: border-box !important;
+}
+
+/* Ensure SVGs and icons maintain dimensions */
+.qv-trust-icon svg,
+.qv-arrow svg,
+.star svg,
+svg {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    vertical-align: middle !important;
+}
+
+/* Prevent layout shift from lazy loading */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Ensure proper overflow handling */
+.qv-category,
+.platform-card,
+.quick-verdict,
+.table-container,
+.content-section {
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* ===================================
+   END NITROPACK COMPATIBILITY FIXES
+   =================================== */
+
+/* ===================================
    ARTICLE HEADER - Embossed Card with Depth
    Light Skeuomorphic Design with Orange Accent
    =================================== */
@@ -592,44 +641,72 @@
     }
 
     /* FIX: Winner rating mobile sizing */
+    /* NITROPACK FIX: Stronger mobile rules */
     .qv-winner-rating {
-        font-size: 0.8125rem;
+        font-size: 0.8125rem !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-shrink: 0 !important;
     }
 
     /* FIX: Stars mobile sizing */
+    /* NITROPACK FIX: Prevent star misalignment */
     .star {
-        width: 7px;
-        height: 7px;
+        width: 7px !important;
+        height: 7px !important;
+        flex-shrink: 0 !important;
+        display: inline-block !important;
+    }
+
+    .qv-rating-stars {
+        display: inline-flex !important;
+        gap: 1px !important;
+        flex-shrink: 0 !important;
     }
 
     /* FIX: Trust signals mobile spacing */
+    /* NITROPACK FIX: Maintain proper alignment */
     .qv-trust-signals {
-        gap: 0.75rem;
-        padding-top: 0.875rem;
-        margin-top: 0.875rem;
+        gap: 0.75rem !important;
+        padding-top: 0.875rem !important;
+        margin-top: 0.875rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 
     /* FIX: Trust item mobile sizing */
     .qv-trust-item {
-        font-size: 0.6875rem;
+        font-size: 0.6875rem !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        gap: 0.375rem !important;
+        flex-shrink: 0 !important;
     }
 
     /* FIX: Trust icon mobile sizing */
     .qv-trust-icon {
-        width: 14px;
-        height: 14px;
+        width: 14px !important;
+        height: 14px !important;
+        flex-shrink: 0 !important;
+        display: inline-flex !important;
     }
 
     /* FIX: Arrows mobile sizing */
     .qv-arrow {
-        width: 12px;
-        height: 12px;
+        width: 12px !important;
+        height: 12px !important;
+        flex-shrink: 0 !important;
+        display: inline-block !important;
     }
 
     /* FIX: View details mobile sizing */
     .qv-view-details {
-        font-size: 0.6875rem;
-        gap: 0.375rem;
+        font-size: 0.6875rem !important;
+        gap: 0.375rem !important;
+        display: flex !important;
+        align-items: center !important;
     }
 
     /* FIX: TOP PICK badge mobile adjustment */
@@ -650,16 +727,19 @@
 /* FIX: Extra Small Devices (< 360px) */
 @media (max-width: 360px) {
     /* FIX: Stack trust signals vertically on very small screens */
+    /* NITROPACK FIX: Ensure vertical stacking is preserved */
     .qv-trust-signals {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.5rem !important;
+        display: flex !important;
     }
 
     /* FIX: Stack winner name and rating vertically */
     .qv-winner-name {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        display: flex !important;
     }
 }
 
@@ -860,35 +940,64 @@
 }
 
 /* FIX: Rating Display - Prevent wrapping */
-.platform-rating {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    flex-wrap: nowrap; /* FIX: Prevent wrapping */
+/* NITROPACK FIX: Enhanced containment for table ratings */
+.platform-rating,
+.platform-table .platform-rating,
+table .platform-rating,
+td .platform-rating {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    flex-wrap: nowrap !important; /* FIX: Prevent wrapping */
+    max-width: 100% !important;
+    overflow: visible !important;
+    white-space: nowrap !important;
 }
 
 /* FIX: Rating Stars */
-.rating-stars {
-    display: inline-flex;
-    gap: 2px;
-    flex-shrink: 0; /* FIX: Prevent stars from shrinking */
+/* NITROPACK FIX: Stronger containment for stars */
+.rating-stars,
+.platform-table .rating-stars,
+table .rating-stars,
+td .rating-stars {
+    display: inline-flex !important;
+    gap: 2px !important;
+    flex-shrink: 0 !important; /* FIX: Prevent stars from shrinking */
+    overflow: visible !important;
 }
 
-.rating-stars .star {
-    width: 12px;
-    height: 12px;
-    fill: #ff6b35;
-    flex-shrink: 0; /* FIX: Prevent individual stars from shrinking */
+.rating-stars .star,
+.platform-table .rating-stars .star,
+table .rating-stars .star,
+td .rating-stars .star {
+    width: 12px !important;
+    height: 12px !important;
+    fill: #ff6b35 !important;
+    flex-shrink: 0 !important; /* FIX: Prevent individual stars from shrinking */
+    display: inline-block !important;
 }
 
-.rating-stars .star.empty {
-    fill: #e5e5e7;
+.rating-stars .star.empty,
+.platform-table .rating-stars .star.empty,
+table .rating-stars .star.empty {
+    fill: #e5e5e7 !important;
 }
 
-.rating-value {
-    margin-left: 0.25rem;
-    font-size: 0.75rem;
-    color: #515154;
+.rating-value,
+.platform-table .rating-value,
+table .rating-value,
+td .rating-value {
+    margin-left: 0.25rem !important;
+    font-size: 0.75rem !important;
+    color: #515154 !important;
+    white-space: nowrap !important;
+}
+
+/* NITROPACK FIX: Ensure table cells accommodate ratings */
+.platform-table td,
+table td {
+    overflow: visible !important;
+    position: relative !important;
 }
 
 /* Feature Check/Cross */
@@ -1685,24 +1794,55 @@ p.small {
    LIST STYLES
    =================================== */
 
-/* Unordered List */
-ul {
+/* NITROPACK FIX: Scope list styles to content areas only, exclude navigation */
+/* Only apply custom bullets to lists within content containers */
+.content-section ul,
+.content-card ul,
+.article-content ul,
+.tab-content ul,
+.info-box ul,
+.key-points ul,
+.pros-box ul,
+.cons-box ul,
+.summary-box ul,
+article ul,
+main ul:not(nav ul):not(.elementor-icon-list-items):not([class*="menu"]):not([class*="nav"]) {
     margin: 0 0 1.5rem 0;
     padding-left: 0;
-    list-style: none;
+    list-style: none !important;
 }
 
-ul li {
+.content-section ul li,
+.content-card ul li,
+.article-content ul li,
+.tab-content ul li,
+.info-box ul li,
+.key-points ul li,
+.pros-box ul li,
+.cons-box ul li,
+.summary-box ul li,
+article ul li,
+main ul:not(nav ul):not(.elementor-icon-list-items):not([class*="menu"]):not([class*="nav"]) li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.5rem !important;
     margin-bottom: 0.5rem;
     font-size: 0.9375rem;
     line-height: 1.7;
     color: #424245;
 }
 
-ul li::before {
-    content: '•';
+.content-section ul li::before,
+.content-card ul li::before,
+.article-content ul li::before,
+.tab-content ul li::before,
+.info-box ul li::before,
+.key-points ul li::before,
+.pros-box ul li::before,
+.cons-box ul li::before,
+.summary-box ul li::before,
+article ul li::before,
+main ul:not(nav ul):not(.elementor-icon-list-items):not([class*="menu"]):not([class*="nav"]) li::before {
+    content: '•' !important;
     position: absolute;
     left: 0;
     color: #ff6b35;
@@ -1711,26 +1851,47 @@ ul li::before {
     line-height: 1.4;
 }
 
-/* Ordered List */
-ol {
+/* Ordered List - scoped to content areas */
+.content-section ol,
+.content-card ol,
+.article-content ol,
+.tab-content ol,
+.info-box ol,
+.summary-box ol,
+article ol,
+main ol:not(nav ol):not([class*="menu"]):not([class*="nav"]) {
     counter-reset: list-counter;
     margin: 0 0 1.5rem 0;
     padding-left: 0;
-    list-style: none;
+    list-style: none !important;
 }
 
-ol li {
+.content-section ol li,
+.content-card ol li,
+.article-content ol li,
+.tab-content ol li,
+.info-box ol li,
+.summary-box ol li,
+article ol li,
+main ol:not(nav ol):not([class*="menu"]):not([class*="nav"]) li {
     counter-increment: list-counter;
     position: relative;
-    padding-left: 2rem;
+    padding-left: 2rem !important;
     margin-bottom: 0.75rem;
     font-size: 0.9375rem;
     line-height: 1.7;
     color: #424245;
 }
 
-ol li::before {
-    content: counter(list-counter);
+.content-section ol li::before,
+.content-card ol li::before,
+.article-content ol li::before,
+.tab-content ol li::before,
+.info-box ol li::before,
+.summary-box ol li::before,
+article ol li::before,
+main ol:not(nav ol):not([class*="menu"]):not([class*="nav"]) li::before {
+    content: counter(list-counter) !important;
     position: absolute;
     left: 0;
     top: 0.125rem;
@@ -2594,4 +2755,14 @@ ul.checklist li::before {
    - Added container min-height to .platform-logo (70px)
    - Target images in picture and figure elements
    - Ensure Elementor wrapper containers have fixed dimensions
+
+   NITROPACK COMPATIBILITY FIXES:
+   - Scoped list styles to content areas only (exclude navigation/menus)
+   - Added !important flags to mobile media queries
+   - Enhanced star rating containment in tables with multiple selectors
+   - Added overflow: visible to table cells for ratings
+   - Strengthened flexbox properties on trust icons, arrows, and stars
+   - Added defensive box-sizing and SVG dimension rules
+   - Prevented layout shifts from optimization/lazy loading
+   - Protected flex-shrink: 0 rules with !important flags
    =================================== */
