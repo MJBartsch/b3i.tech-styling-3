@@ -530,6 +530,28 @@
     padding: 0.875rem 1rem;
 }
 
+/* Platform Logo Container */
+.qv-platform-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    min-height: 70px;
+}
+
+.qv-platform-logo img {
+    display: block !important;
+    max-width: 160px !important;
+    max-height: 50px !important;
+    width: 160px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: 16/5 !important;
+}
+
 .qv-winner-link {
     text-decoration: none;
     color: inherit;
@@ -742,6 +764,196 @@
             <p class="intro">Bitcoin betting sites are capturing the attention of UK bettors, but only a handful of these platforms are worth joining. Our list introduces you to reputable crypto betting sites that ensure an unbeatable betting experience through their unmatched bonuses, extensive sports coverage, and lightning-fast payouts.</p>
             <p class="intro">After testing dozens of platforms, we've identified the top crypto betting sites that UK bettors can trust in 2025. Each has been verified for security, licensing, and reliability.</p>
         </header>
+
+        <!-- Quick Verdict Section with Platform Logos -->
+        <section class="quick-verdict">
+            <div class="qv-header">
+                <h2 class="qv-title">Quick Verdict</h2>
+                <p class="qv-subtitle">The best crypto betting sites for UK players at a glance</p>
+                <div class="qv-updated">
+                    Updated: <time datetime="2025-11-13">November 13, 2025</time>
+                </div>
+            </div>
+
+            <div class="qv-categories">
+                <!-- Best Overall: 888Sport -->
+                <article class="qv-category featured">
+                    <div class="qv-category-header">
+                        <span class="qv-category-label">🏆 Best Overall</span>
+                        <h3 class="qv-category-title">Lowest Minimum Deposit</h3>
+                    </div>
+                    <div class="qv-category-body">
+                        <!-- Platform Logo -->
+                        <div class="qv-platform-logo">
+                            <img src="https://via.placeholder.com/160x50/ff6b35/ffffff?text=888Sport" alt="888Sport Logo" loading="lazy">
+                        </div>
+
+                        <a href="#888sport-review" class="qv-winner-link">
+                            <div class="qv-winner-name">
+                                <span>888Sport</span>
+                                <div class="qv-winner-rating">
+                                    <div class="qv-rating-stars">
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    </div>
+                                    5/5
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="qv-winner-features">
+                            <li>£5 minimum deposit</li>
+                            <li>5 cryptocurrencies supported</li>
+                            <li>Zero withdrawal fees</li>
+                        </ul>
+                        <span class="qv-highlight-badge">24hr Payouts</span>
+                    </div>
+                    <div class="qv-category-footer">
+                        <a href="#888sport-review" class="qv-view-details">
+                            View Full Review
+                            <svg class="qv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Fastest Payouts: Betfair -->
+                <article class="qv-category">
+                    <div class="qv-category-header">
+                        <span class="qv-category-label">⚡ Fastest Payouts</span>
+                        <h3 class="qv-category-title">Under 2 Hours</h3>
+                    </div>
+                    <div class="qv-category-body">
+                        <!-- Platform Logo -->
+                        <div class="qv-platform-logo">
+                            <img src="https://via.placeholder.com/160x50/fcc419/1d1d1f?text=Betfair" alt="Betfair Logo" loading="lazy">
+                        </div>
+
+                        <a href="#betfair-review" class="qv-winner-link">
+                            <div class="qv-winner-name">
+                                <span>Betfair</span>
+                                <div class="qv-winner-rating">
+                                    <div class="qv-rating-stars">
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    </div>
+                                    5/5
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="qv-winner-features">
+                            <li>Under 2-hour withdrawals</li>
+                            <li>Exchange betting model</li>
+                            <li>31 sports covered</li>
+                        </ul>
+                        <span class="qv-highlight-badge">Best Odds</span>
+                    </div>
+                    <div class="qv-category-footer">
+                        <a href="#betfair-review" class="qv-view-details">
+                            View Full Review
+                            <svg class="qv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Best Mobile: Virgin Bet -->
+                <article class="qv-category">
+                    <div class="qv-category-header">
+                        <span class="qv-category-label">📱 Best Mobile</span>
+                        <h3 class="qv-category-title">Top Mobile Experience</h3>
+                    </div>
+                    <div class="qv-category-body">
+                        <!-- Platform Logo -->
+                        <div class="qv-platform-logo">
+                            <img src="https://via.placeholder.com/160x50/e50914/ffffff?text=Virgin+Bet" alt="Virgin Bet Logo" loading="lazy">
+                        </div>
+
+                        <a href="#virginbet-review" class="qv-winner-link">
+                            <div class="qv-winner-name">
+                                <span>Virgin Bet</span>
+                                <div class="qv-winner-rating">
+                                    <div class="qv-rating-stars">
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                        <svg class="star empty" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                    </div>
+                                    4.5/5
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="qv-winner-features">
+                            <li>iOS & Android apps</li>
+                            <li>£5 minimum deposit</li>
+                            <li>Fast customer support</li>
+                        </ul>
+                        <span class="qv-highlight-badge">Mobile First</span>
+                    </div>
+                    <div class="qv-category-footer">
+                        <a href="#virginbet-review" class="qv-view-details">
+                            View Full Review
+                            <svg class="qv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="qv-trust-signals">
+                <div class="qv-trust-item">
+                    <svg class="qv-trust-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span>Licensed & Regulated</span>
+                </div>
+                <div class="qv-trust-item">
+                    <svg class="qv-trust-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                    <span>SSL Encrypted</span>
+                </div>
+                <div class="qv-trust-item">
+                    <svg class="qv-trust-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                    <span>Instant Payouts</span>
+                </div>
+                <div class="qv-trust-item">
+                    <svg class="qv-trust-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/>
+                    </svg>
+                    <span>Zero Fees</span>
+                </div>
+            </div>
+
+            <!-- Compare All Button -->
+            <div class="qv-compare-section">
+                <div class="qv-compare-header">
+                    <h3 class="qv-compare-title">Compare All Platforms</h3>
+                    <span class="qv-compare-count">10 sites reviewed</span>
+                </div>
+                <a href="#comparison-table" class="qv-compare-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+                    </svg>
+                    View Full Comparison Table
+                    <svg class="qv-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
 
         <section class="summary-box">
             <h2>Quick Verdict: What is the Best Bitcoin Betting Site in the UK Right Now?</h2>

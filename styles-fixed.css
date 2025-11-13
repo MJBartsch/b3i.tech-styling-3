@@ -294,6 +294,35 @@ img {
     overflow: hidden; /* FIX: Contain all child elements */
 }
 
+/* Platform Logo Container */
+.qv-platform-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    min-height: 70px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.qv-platform-logo img {
+    display: block !important;
+    max-width: 160px !important;
+    max-height: 50px !important;
+    width: 160px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: 16/5 !important;
+}
+
+/* Elementor compatibility for platform logos */
+.qv-platform-logo .elementor-widget-container {
+    width: 160px;
+    min-height: 50px;
+}
+
 .qv-winner-link {
     text-decoration: none;
     color: inherit;
