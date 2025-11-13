@@ -33,7 +33,7 @@
                     <div class="qv-category-body">
                         <!-- Platform Logo -->
                         <div class="qv-platform-logo">
-                            <img src="https://b3i.tech/wp-content/uploads/2025/11/888-sport-logo.jpg" alt="888Sport Logo" loading="lazy">
+                            <img src="https://b3i.tech/wp-content/uploads/2025/11/888-sport-logo.jpg" alt="888Sport Logo" width="160" height="50" loading="lazy">
                         </div>
 
                         <a href="#888sport" class="qv-winner-link">
@@ -70,7 +70,7 @@
                     <div class="qv-category-body">
                         <!-- Platform Logo -->
                         <div class="qv-platform-logo">
-                            <img src="https://b3i.tech/wp-content/uploads/2025/11/Betfair-Logo.png" alt="Betfair Logo" loading="lazy">
+                            <img src="https://b3i.tech/wp-content/uploads/2025/11/Betfair-Logo.png" alt="Betfair Logo" width="160" height="50" loading="lazy">
                         </div>
 
                         <a href="#betfair" class="qv-winner-link">
@@ -111,7 +111,7 @@
                     <div class="qv-category-body">
                         <!-- Platform Logo -->
                         <div class="qv-platform-logo">
-                            <img src="https://b3i.tech/wp-content/uploads/2025/11/Virgin-Bet-Logo.png" alt="Virgin Bet Logo" loading="lazy">
+                            <img src="https://b3i.tech/wp-content/uploads/2025/11/Virgin-Bet-Logo.png" alt="Virgin Bet Logo" width="160" height="50" loading="lazy">
                         </div>
 
                         <a href="#virginbet" class="qv-winner-link">
